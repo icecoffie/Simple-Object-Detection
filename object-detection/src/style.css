@@ -1,0 +1,112 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 2em;
+  color: #3d3d3d;
+  text-align: center;
+}
+
+h1 {
+  font-style: italic;
+  color: #87cefa;
+}
+
+h2 {
+  clear: both;
+  text-align: center;
+}
+
+em {
+  font-weight: bold;
+}
+
+video {
+  clear: both;
+  display: block;
+  margin: 0 auto; 
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+  text-align: center;
+}
+
+header,
+footer {
+  clear: both;
+  text-align: center;
+}
+
+.removed {
+  display: none;
+}
+
+.invisible {
+  opacity: 0.2;
+}
+
+.note {
+  font-style: italic;
+  font-size: 130%;
+  text-align: center;
+}
+
+.videoView,
+.classifyOnClick {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  margin: 2% 1%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.videoView p,
+.classifyOnClick p {
+  position: absolute;
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: rgba(0, 136, 255, 0.85);
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 14px;
+  max-width: 80%; 
+  text-align: center;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .videoView,
+  .classifyOnClick {
+    width: 100%; 
+  }
+
+  .videoView p,
+  .classifyOnClick p {
+    font-size: 12px;
+    max-width: 90%; 
+  }
+}
+
+.highlighter {
+  background: rgba(63, 159, 255, 0.285);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
+}
+
+.classifyOnClick {
+  z-index: 0;
+}
+
+.classifyOnClick img {
+  width: 100%;
+  display: block;
+  margin: 0 auto; 
+}
